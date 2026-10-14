@@ -1,0 +1,197 @@
+
+/* FONDO DE LA PAGINA */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* TARJETA DEL FORMULARIO */
+
+.contenedor {
+    width: calc(100% - 32px);
+    max-width: 700px;
+    margin: 45px auto;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.09);
+}
+
+/* ENCABEZADO */
+
+.contenedor h1 {
+    margin: 0;
+    padding: 30px 32px 10px;
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitulo {
+    margin: 0;
+    padding: 0 32px 28px;
+    background: #1e3a8a;
+    color: #dbeafe;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FORMULARIO */
+
+.contenedor form {
+    padding: 10px 32px 28px;
+}
+
+.contenedor label {
+    display: block;
+    margin: 20px 0 8px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CAMPOS */
+
+.contenedor input,
+.contenedor select,
+.contenedor textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: inherit;
+    font-size: 14px;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.contenedor input::placeholder,
+.contenedor textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contenedor input:focus,
+.contenedor select:focus,
+.contenedor textarea:focus {
+    outline: none;
+    background: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.contenedor textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* BOTON REGISTRAR */
+
+.contenedor button {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.contenedor button:hover {
+    background: #1e40af;
+    box-shadow: 0 5px 12px rgba(30, 64, 175, 0.18);
+    transform: translateY(-1px);
+}
+
+.contenedor button:active {
+    transform: translateY(0);
+}
+
+/* MENSAJES */
+
+.contenedor .mensaje {
+    margin: 20px 32px 0;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contenedor .exito {
+    color: #166534;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+.contenedor .error {
+    color: #991b1b;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+/* ENLACE DE REGRESO */
+
+.contenedor > .enlace {
+    display: block;
+    margin: 0;
+    padding: 0 32px 28px;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contenedor > .enlace:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: calc(100% - 24px);
+        margin: 20px auto;
+        border-radius: 12px;
+    }
+
+    .contenedor h1 {
+        padding: 24px 22px 10px;
+        font-size: 24px;
+    }
+
+    .subtitulo {
+        padding: 0 22px 24px;
+    }
+
+    .contenedor form {
+        padding: 8px 22px 24px;
+    }
+
+    .contenedor .mensaje {
+        margin-right: 22px;
+        margin-left: 22px;
+    }
+
+    .contenedor > .enlace {
+        padding: 0 22px 24px;
+    }
+}

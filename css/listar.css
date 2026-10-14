@@ -1,0 +1,311 @@
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.contenedor-listado {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== ENCABEZADO ===== */
+
+.encabezado-listado {
+    margin-bottom: 25px;
+}
+
+.encabezado-listado h1 {
+    margin-bottom: 8px;
+    color: #1e3a8a;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.encabezado-listado p {
+    color: #64748b;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+/* ===== FILTROS ===== */
+
+.filtros {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 15px;
+    align-items: end;
+    padding: 22px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.filtros label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filtros input,
+.filtros select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #1e293b;
+    font: inherit;
+    font-size: 14px;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.acciones-filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones-filtro button {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 12px;
+    color: #334155;
+    background: #e2e8f0;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.boton-secundario:hover {
+    background: #cbd5e1;
+}
+
+/* ===== TOTAL DE REGISTROS ===== */
+
+.total {
+    margin: 22px 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+.total strong {
+    color: #1e3a8a;
+    font-size: 16px;
+}
+
+/* ===== TABLA ===== */
+
+.tabla-contenedor {
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.tabla-incidencias {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.tabla-incidencias th,
+.tabla-incidencias td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.tabla-incidencias th {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tabla-incidencias tbody tr {
+    transition: background 0.15s;
+}
+
+.tabla-incidencias tbody tr:hover {
+    background: #f8fafc;
+}
+
+.tabla-incidencias tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-incidencias td:nth-child(5) {
+    min-width: 180px;
+    max-width: 280px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.tabla-incidencias td:nth-child(8) {
+    white-space: nowrap;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.sin-resultados {
+    padding: 30px !important;
+    text-align: center !important;
+    color: #64748b;
+}
+
+/* ===== ETIQUETAS DE PRIORIDAD Y ESTADO ===== */
+
+.etiqueta {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Prioridades */
+
+.prioridad-baja {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.prioridad-media {
+    color: #854d0e;
+    background: #fef3c7;
+}
+
+.prioridad-alta {
+    color: #9a3412;
+    background: #ffedd5;
+}
+
+.prioridad-critica {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+/* Estados */
+
+.estado-pendiente {
+    color: #92400e;
+    background: #fef3c7;
+}
+
+.estado-en-proceso {
+    color: #1d4ed8;
+    background: #dbeafe;
+}
+
+.estado-resuelta {
+    color: #166534;
+    background: #dcfce7;
+}
+
+/* ===== BOTONES EDITAR Y ELIMINAR ===== */
+
+.acciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.acciones a {
+    display: inline-block;
+    padding: 9px 12px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.acciones a:hover {
+    transform: translateY(-1px);
+}
+
+.acciones .btn-editar {
+    background: #2563eb;
+}
+
+.acciones .btn-editar:hover {
+    background: #1d4ed8;
+}
+
+.acciones .btn-eliminar {
+    background: #dc2626;
+}
+
+.acciones .btn-eliminar:hover {
+    background: #b91c1c;
+}
+
+.tabla-incidencias th:last-child,
+.tabla-incidencias td:last-child {
+    text-align: center;
+    min-width: 155px;
+}
+
+/* ===== VOLVER AL INICIO ===== */
+
+.volver {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* ===== DISEÑO RESPONSIVO ===== */
+
+@media (max-width: 1000px) {
+    .filtros {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .acciones-filtro {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-listado {
+        padding: 12px;
+    }
+
+    .encabezado-listado h1 {
+        font-size: 24px;
+    }
+
+    .filtros {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .acciones {
+        flex-wrap: wrap;
+    }
+}

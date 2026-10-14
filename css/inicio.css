@@ -1,0 +1,141 @@
+
+/* ===== ESTILO GENERAL DEL PANEL ===== */
+
+body {
+    margin: 0;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.panel {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 35px 24px;
+}
+
+/* ===== ENCABEZADO ===== */
+
+.encabezado {
+    padding: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #172554, #1e40af);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.15);
+}
+
+.encabezado h1 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.encabezado p {
+    max-width: 700px;
+    margin: 0;
+    color: #dbeafe;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ===== TÍTULO DE SECCIÓN ===== */
+
+.titulo-seccion {
+    margin: 0 0 18px;
+    color: #172554;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* ===== TARJETAS ===== */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.tarjeta {
+    position: relative;
+    padding: 28px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+.tarjeta h2 {
+    margin: 0 0 12px;
+    color: #1e3a8a;
+    font-size: 21px;
+}
+
+.tarjeta p {
+    min-height: 48px;
+    margin: 0 0 22px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ===== BOTONES ===== */
+
+.boton {
+    display: inline-block;
+    padding: 12px 19px;
+    background: #1d4ed8;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.boton:hover {
+    background: #1e40af;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+
+.pie {
+    margin-top: 35px;
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ===== DISEÑO RESPONSIVO ===== */
+
+@media (max-width: 650px) {
+    .panel {
+        padding: 20px 14px;
+    }
+
+    .encabezado {
+        padding: 24px;
+    }
+
+    .encabezado h1 {
+        font-size: 25px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta p {
+        min-height: auto;
+    }
+}
