@@ -1,4 +1,4 @@
-```php
+
 <?php
 session_start();
 require_once "config/database.php";
@@ -53,67 +53,7 @@ function escapar($valor) {
     <title>Inicio de sesión | Gestión de Incidencias</title>
 
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .login {
-            max-width: 430px;
-            margin: 60px auto;
-            padding: 30px;
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 14px;
-            box-shadow: 0 12px 35px rgba(15, 23, 42, .09);
-        }
-
-        .login h1 {
-            margin-top: 0;
-            color: #1e3a8a;
-            text-align: center;
-        }
-
-        .login button {
-            width: 100%;
-            margin-top: 24px;
-        }
-
-        .login .error {
-            margin-top: 15px;
-            padding: 12px;
-            border-radius: 6px;
-            background: #fee2e2;
-            color: #991b1b;
-        }
-
-        .login .ayuda {
-            color: #64748b;
-            font-size: 13px;
-            text-align: center;
-        }
-
-        .opcion-visitante {
-            margin-top: 24px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            text-align: center;
-        }
-
-        .boton-visitante {
-            display: inline-block;
-            padding: 12px 20px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            color: #1e3a8a;
-            background: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background .2s, color .2s;
-        }
-
-        .boton-visitante:hover {
-            background: #1e3a8a;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -181,4 +121,3 @@ function escapar($valor) {
 
 </body>
 </html>
-```
